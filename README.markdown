@@ -1,9 +1,9 @@
 # GPMod
 ## Plugins
 - [Info](#info-plugin)
-- [Create Sticker](#Create-sticker-plugin-Comming-soon...)
-- [Sticker to image](#sticker-to-image-plugin-comming soon...)
-- [Dynamic commands](#dynamic-commands-plugin-comming-soon...)
+- [Create Sticker](#Create-sticker-plugin-Comming-soon)
+- [Sticker to image](#sticker-to-image-plugin-comming soon)
+- [Dynamic commands](#dynamic-commands-plugin-comming-soon)
 
 ### Info plugin
 >[!/]info
