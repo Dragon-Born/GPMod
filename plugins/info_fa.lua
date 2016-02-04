@@ -4,7 +4,7 @@
 #
 # author: Arian < @Dragon_Born > 
 # our channel: @GPMod
-# Version: 2016-02-04
+# Version: 2016-04-02
 #
 # Features added:
 # -- setrank on reply
@@ -25,8 +25,7 @@ local function setrank(msg, name, value) -- setrank function
 	return send_msg('chat#id'..msg.to.id, 'مقام کاربر ('..name..') به '..value..' تغییر داده شد ', ok_cb,  true)
   end
 end
-
-local function res_user(extra, success, result) -- /info <username> function
+local function res_user_callback(extra, success, result) -- /info <username> function
   if success == 1 then  
   if result.username then
    Username = '@'..result.username
@@ -70,7 +69,7 @@ local function action_by_id(extra, success, result)  -- /info <ID> function
  if result.username then
    Username = '@'..result.username
    else
-   Username = 'ندارد' 
+   Username = 'ندارد'
  end
     local text = 'نام کامل : '..(result.first_name or '')..' '..(result.last_name or '')..'\n'
                ..'یوزر: '..Username..'\n'
@@ -219,9 +218,9 @@ local function run(msg, matches)
    local receiver = get_receiver(msg)
    if string.match(user, '^%d+$') then
 	  user_info('user#id'..user, action_by_id, {receiver=receiver, user=user, text=text, chat2=chat2})
-    elseif string.match(user, '^@.+$') or string.match(user, '^.+$') then
+    elseif string.match(user, '^@.+$') then
       username = string.gsub(user, '@', '')
-      msgr = res_user(username, res_user, {receiver=receiver, user=user, text=text, chat2=chat2})
+      msgr = res_user(username, res_user_callback, {receiver=receiver, user=user, text=text, chat2=chat2})
    end
   end
 end
@@ -229,18 +228,18 @@ end
 return {
   description = 'Know your information or the info of a chat members.',
   usage = {
-  '!info: Return your info and the chat info if you are in one.',
-  '(Reply)!info: Return info of replied user if used by reply.',
-  '!info <id>: Return the info\'s of the <id>.',
-  '!info @<user_name>: Return the member @<user_name> information from the current chat.',
+    '!info: Return your info and the chat info if you are in one.',
+    '(Reply)!info: Return info of replied user if used by reply.',
+    '!info <id>: Return the info\'s of the <id>.',
+    '!info @<user_name>: Return the member @<user_name> information from the current chat.',
 	'!setrank <userid> <rank>: change members rank.',
 	'(Reply)!setrank <rank>: change members rank.',
   },
   patterns = {
     "^[/!]([Ii][Nn][Ff][Oo])$",
     "^[/!]([Ii][Nn][Ff][Oo]) (.*)$",
-  	"^[/!]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (%d+) (.*)$",
-  	"^[/!]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (.*)$",
+	"^[/!]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (%d+) (.*)$",
+	"^[/!]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (.*)$",
   },
   run = run
 }
