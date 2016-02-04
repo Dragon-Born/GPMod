@@ -26,9 +26,9 @@
 #
 >>_set members rank by reply_
 
-### Create sticker plugin
->[!/]sticker
->comming soon...
+### Create sticker plugin Comming soon...
+
+### sticker to image plugin Comming soon...
 
 ## Contact me
 Arian > [@Dragon_born](https://telegram.me/dragon_born)
