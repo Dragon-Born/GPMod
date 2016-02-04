@@ -70,7 +70,7 @@ local function action_by_id(extra, success, result)  -- /info <ID> function
  if result.username then
    Username = '@'..result.username
    else
-   Username = 'ندارد'
+   Username = 'ندارد' 
  end
     local text = 'نام کامل : '..(result.first_name or '')..' '..(result.last_name or '')..'\n'
                ..'یوزر: '..Username..'\n'
