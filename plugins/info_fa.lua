@@ -228,16 +228,16 @@ end
 return {
   description = 'Know your information or the info of a chat members.',
   usage = {
-    '!info: Return your info and the chat info if you are in one.',
-    '(Reply)!info: Return info of replied user if used by reply.',
-    '!info <id>: Return the info\'s of the <id>.',
-    '!info @<user_name>: Return the member @<user_name> information from the current chat.',
+	'!info: Return your info and the chat info if you are in one.',
+	'(Reply)!info: Return info of replied user if used by reply.',
+	'!info <id>: Return the info\'s of the <id>.',
+	'!info @<user_name>: Return the member @<user_name> information from the current chat.',
 	'!setrank <userid> <rank>: change members rank.',
 	'(Reply)!setrank <rank>: change members rank.',
   },
   patterns = {
-    "^[/!]([Ii][Nn][Ff][Oo])$",
-    "^[/!]([Ii][Nn][Ff][Oo]) (.*)$",
+	"^[/!]([Ii][Nn][Ff][Oo])$",
+	"^[/!]([Ii][Nn][Ff][Oo]) (.*)$",
 	"^[/!]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (%d+) (.*)$",
 	"^[/!]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (.*)$",
   },
