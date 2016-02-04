@@ -2,10 +2,10 @@
 # Commands 
 ## Info plugin
 >[!/]info
->>_return user information_
+>_return user information_
 #
 >[!/]info [userid]
->>_Return the info's of the [uiserid]_
+>_Return the info's of the [uiserid]_
 #
 >[!/]info [@username]
 >>_Return the member [@username] information from the current chat_
