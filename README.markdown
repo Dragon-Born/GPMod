@@ -30,6 +30,8 @@
 
 ### sticker to image plugin Comming soon...
 
+### Dynamic Commands plugin Comming soon...
+
 ## Contact me
 Arian > [@Dragon_born](https://telegram.me/dragon_born)
 
