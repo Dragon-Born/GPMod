@@ -2,11 +2,14 @@
 # Commands 
 ## Info plugin
 >[!/]info
->>return user information
+>>_return user information_
+##
 >[!/]info [userid]
->>Return the info's of the [uiserid]
+>>_Return the info's of the [uiserid]_
+##
 >[!/]info [@username]
->>Return the member [@username] information from the current chat
+>>_Return the member [@username] information from the current chat_
+##
 ### Admins Commands
 >[!/]setrank [userid] [Rank]
 >>>_set members rank with their user id_
