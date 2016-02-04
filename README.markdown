@@ -24,4 +24,4 @@
 >> 
 >>(Reply) [!/]setrank [Rank]
 #
->>_set members rank on reply_
+>>_set members rank by reply_
