@@ -29,4 +29,4 @@
 ## Contact me
 Arian > [@Dragon_born](https://telegram.me/dragon_born)
 
-Our cahnnels : [@GPMod](https://telegram.me/gpmod)
+Our channel : [@GPMod](https://telegram.me/gpmod)
